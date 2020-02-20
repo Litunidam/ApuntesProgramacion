@@ -26,10 +26,10 @@ public class Principal {
 		} while (option < 1 && option > 7);
 		s.nextLine();
 
-		comenzar(option, l);
+		comenzar(option);
 	}
 
-	public static void comenzar(int option, ListaDeActores l) {
+	public static void comenzar(int option) {
 
 		switch (option) {
 		case 1:
@@ -74,5 +74,4 @@ public class Principal {
 		menu();
 
 	}
-
 }

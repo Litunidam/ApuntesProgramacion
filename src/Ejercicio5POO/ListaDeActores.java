@@ -14,9 +14,9 @@ public class ListaDeActores {
 		}
 	}
 
-	public void changeNombre(String s, String c) {
-		if (l.contains(s)) {
-			l.set(l.indexOf(s), c);
+	public void changeNombre(String nombreViejo, String nombreNuevo) {
+		if (l.contains(nombreViejo)) {
+			l.set(l.indexOf(nombreViejo), nombreNuevo);
 		} else {
 			System.out.println("Ese nombre no existe");
 		}
