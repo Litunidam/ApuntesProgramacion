@@ -34,25 +34,22 @@ public class Principal {
 		switch (option) {
 		case 1:
 			System.out.println("Introduzca el nombre a insertar:");
-			String c = s.nextLine();
-			l.setNombre(c);
+			l.setNombre(s.nextLine());
 			break;
 		case 2:
 			System.out.println("Introduzca el nombre que quieres modificar:");
 			String p = s.nextLine();
 			System.out.println("Ahora introduzca el nuevo nombre");
-			String np = s.nextLine();
-			l.changeNombre(p, np);
+			l.changeNombre(p, s.nextLine());
 			break;
 		case 3:
 			System.out.println("Inserte el nombre que quieras borrar");
-			String n = s.nextLine();
-			l.deleteNombre(n);
+			l.deleteNombre(s.nextLine());
 			break;
 		case 4:
 			System.out.println("Inserte el nombre para saber su posición");
-			String buscar = s.nextLine();
-			int position = l.searchNombre(buscar);
+		
+			int position = l.searchNombre(s.nextLine());
 			break;
 		case 5:
 			l.showNombres();
