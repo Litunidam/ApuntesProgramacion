@@ -56,6 +56,7 @@ public class Principal {
 			break;
 		case 6:
 			int cantidad = l.countNombres();
+			System.out.println("Hay "+cantidad+" actores");
 			break;
 		default:
 			break;
