@@ -4,8 +4,9 @@ import java.util.Scanner;
 
 public class Principal {
 	private static Scanner s = new Scanner(System.in);
-
-	public static void menu(ListaDeActores l) {
+	private static ListaDeActores l;
+	
+	public static void menu() {
 
 		int option;
 		do {
@@ -68,9 +69,9 @@ public class Principal {
 
 	public static void main(String[] args) {
 
-		ListaDeActores l = new ListaDeActores();
+		l=new ListaDeActores();
 
-		menu(l);
+		menu();
 
 	}
 
